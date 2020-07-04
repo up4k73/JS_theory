@@ -171,3 +171,19 @@ function checkAndLogAge(year, name, compareTo) {
 checkAndLogAge(carYear, 'машины', 10)
 checkAndLogAge(personYear, 'человека', 30)
 
+function sayHelloTo(name){
+    console.log('Привет ' + name)
+}
+sayHelloTo('Елена')
+
+// let str1 = 'hello'
+// let str2 = "hello2"
+// console.log(str1)
+
+let word1 = 'hElLo'
+console.log(word1.length)
+console.log(word1.toUpperCase())
+console.log(word1.toLowerCase())
+console.log(word1.charAt(2))
+console.log(word1.indexOf('el'))
+console.log(word1.substr(1, 2))
