@@ -92,6 +92,30 @@ console.log(!!!true) // !!!true => !!false => !true => false
 console.log((false && true) || (true || false) || !true)
 // false || true || false => true
 
+var currentYear = 2018
+var carName = 'Ford'
+var carYear = 2015
+var carAge = currentYear - carYear
+// если возраст машины меньше 5 лет, то
+// если возраст машины больше или равно 5 лет и меньше или равно 10 лет, то
+// иначе
+if (carAge < 5) {
+    console.log(carName + ' ' + 'младше 5 лет')
+} else if (carAge >= 5 && carAge <= 10) {
+    console.log(carName + ' ' + 'больше или равен 5 годам или меньше или равен 10 годам')
+} else {
+    console.log('Возраст ' + carName + ' ' + 'равняется ' + carAge + ' годам')
+}
+
+//
+
+if (0) {
+ console.log('Значение true')
+} else {
+    console.log('Значение false')
+}
+
+
 
 
 
