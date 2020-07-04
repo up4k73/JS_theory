@@ -107,20 +107,67 @@ if (carAge < 5) {
     console.log('Возраст ' + carName + ' ' + 'равняется ' + carAge + ' годам')
 }
 
-//
+// 0 null undefined
+var empty = ''
 
-if (0) {
+let str = 'hello'
+if (NaN) {
  console.log('Значение true')
 } else {
     console.log('Значение false')
 }
 
+str ? console.log('значение true') : console.log('значение false')
+
+var personAge = 14
+var message = personAge < 18 ? 'не совершеннолетний' : 'совершеннолетний'
+
+console.log(message)
+
+var carColor = 'yello'
+
+// if(carColor === 'green'){
+//     console.log('цвет машины зеленый')
+// } else if (carColor === 'yellow') {
+//     console.log('цвет машины - желтый')
+// } else if (carColor === 'red') {
+//     console.log('цвет машины красный')
+// } else {
+//     console.log('цвет машины не определен')
+// }
+
+switch (carColor) {
+    case 'green':
+        console.log('цвет зеленый')
+        break
+    case 'yellow':
+        console.log('цвет желтый')
+        break
+    case 'red':
+        console.log('красный')
+        break
+    default:
+        console.log('цвет не определен')
+}
 
 
+var carName = 'Ford'
+var carYear = 2015
+var personYear = 1990
 
+function calculateAge(year) {
+    var currentYear = 2020
+    var result = currentYear - year
+    return result
+}
 
-
-
-
-
+function checkAndLogAge(year, name, compareTo) {
+    if (calculateAge(year) < compareTo) {
+        console.log('Возраст ' + name + ' меньше '+ compareTo +' лет')
+    } else {
+        console.log('Возраст ' + name + ' меньше '+ compareTo +' лет')
+    }
+}
+checkAndLogAge(carYear, 'машины', 10)
+checkAndLogAge(personYear, 'человека', 30)
 
