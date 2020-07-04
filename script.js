@@ -190,3 +190,20 @@ console.log(word1.substr(1, 2))
 
 console.log((42).toString())
 console.log((8/3).toFixed(2))
+
+var cars = [
+    'Ford', 'Mazda', 'Porsche', 'Kia', 'BMW'
+]
+console.log(cars)
+console.log(cars[1])
+console.log(cars.length)
+//добавление элемента в конец массива
+cars.push('Audi')
+console.log(cars)
+//удаление элемента из массива
+cars.pop()
+console.log(cars)
+
+//удаление и возвращение первого элемента
+let ford = cars.shift()
+console.log(cars)
