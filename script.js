@@ -187,3 +187,6 @@ console.log(word1.toLowerCase())
 console.log(word1.charAt(2))
 console.log(word1.indexOf('el'))
 console.log(word1.substr(1, 2))
+
+console.log((42).toString())
+console.log((8/3).toFixed(2))
