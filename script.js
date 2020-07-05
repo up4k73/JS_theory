@@ -207,3 +207,33 @@ console.log(cars)
 //удаление и возвращение первого элемента
 let ford = cars.shift()
 console.log(cars)
+
+// Объекты
+
+let person = {
+    name: 'Василий',
+    year: 1990,
+    family: ['Елена', 'Игорь'],
+    car: {
+        year: 2010,
+        model: 'Mazda',
+        color: 'red'
+    },
+    calculateAge2: function(year2){
+         this.age = 2020 - this.year
+
+    }
+}
+console.log(person)
+console.log(person.name)
+console.log(person.year)
+console.log(person.car.year)
+
+person.calculateAge2()
+
+let numbers = [1, 2, 3, 4, 5]
+numbers.push('Not a number')
+numbers.push('ололло')
+for (let i = 0; i < numbers.length; i++){
+    console.log(numbers[i])
+}
